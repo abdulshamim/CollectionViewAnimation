@@ -1,0 +1,6 @@
+framework module Pods_DemoCarosuel {
+  umbrella header "Pods-DemoCarosuel-umbrella.h"
+
+  export *
+  module * { export * }
+}

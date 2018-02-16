@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E27AE2467E1E3602EC525E31 /* Pods_DemoCarosuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9612106BF82598FD45AE0 /* Pods_DemoCarosuel.framework */; };
+		F1579A652032AA03007B71B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1579A642032AA03007B71B2 /* AppDelegate.swift */; };
+		F1579A672032AA03007B71B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1579A662032AA03007B71B2 /* ViewController.swift */; };
+		F1579A6A2032AA03007B71B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1579A682032AA03007B71B2 /* Main.storyboard */; };
+		F1579A6C2032AA03007B71B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1579A6B2032AA03007B71B2 /* Assets.xcassets */; };
+		F1579A6F2032AA03007B71B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1579A6D2032AA03007B71B2 /* LaunchScreen.storyboard */; };
+		F1579A772032AAE0007B71B2 /* BookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1579A762032AAE0007B71B2 /* BookingCell.swift */; };
+		F1579A82203309C9007B71B2 /* FSPagerView.framework in Sources */ = {isa = PBXBuildFile; fileRef = F1579A79203305F6007B71B2 /* FSPagerView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		873DD35B60A382731DBCA4E7 /* Pods-DemoCarosuel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCarosuel.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel.release.xcconfig"; sourceTree = "<group>"; };
+		D951EF85E4BC7D73D4A1D188 /* Pods-DemoCarosuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCarosuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel.debug.xcconfig"; sourceTree = "<group>"; };
+		F1579A612032AA03007B71B2 /* DemoCarosuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCarosuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1579A642032AA03007B71B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1579A662032AA03007B71B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1579A692032AA03007B71B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1579A6B2032AA03007B71B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1579A6E2032AA03007B71B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1579A702032AA03007B71B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1579A762032AAE0007B71B2 /* BookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCell.swift; sourceTree = "<group>"; };
+		F1579A79203305F6007B71B2 /* FSPagerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSPagerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1579A7B203306C7007B71B2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F1579A7C203306C7007B71B2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		F1579A7D203306C7007B71B2 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		F1579A7E203306C7007B71B2 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		F1579A7F203306C7007B71B2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		F1579A80203306C7007B71B2 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		F1579A81203306C7007B71B2 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		FAC9612106BF82598FD45AE0 /* Pods_DemoCarosuel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCarosuel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1579A5E2032AA03007B71B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27AE2467E1E3602EC525E31 /* Pods_DemoCarosuel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3391BD0B8B09242D946EAD78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D951EF85E4BC7D73D4A1D188 /* Pods-DemoCarosuel.debug.xcconfig */,
+				873DD35B60A382731DBCA4E7 /* Pods-DemoCarosuel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		51F6146CB6E28F4C00F1D22E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1579A79203305F6007B71B2 /* FSPagerView.framework */,
+				FAC9612106BF82598FD45AE0 /* Pods_DemoCarosuel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1579A582032AA03007B71B2 = {
+			isa = PBXGroup;
+			children = (
+				F1579A632032AA03007B71B2 /* DemoCarosuel */,
+				F1579A622032AA03007B71B2 /* Products */,
+				3391BD0B8B09242D946EAD78 /* Pods */,
+				51F6146CB6E28F4C00F1D22E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1579A622032AA03007B71B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1579A612032AA03007B71B2 /* DemoCarosuel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1579A632032AA03007B71B2 /* DemoCarosuel */ = {
+			isa = PBXGroup;
+			children = (
+				F1579A642032AA03007B71B2 /* AppDelegate.swift */,
+				F1579A762032AAE0007B71B2 /* BookingCell.swift */,
+				F1579A662032AA03007B71B2 /* ViewController.swift */,
+				F1579A682032AA03007B71B2 /* Main.storyboard */,
+				F1579A6B2032AA03007B71B2 /* Assets.xcassets */,
+				F1579A6D2032AA03007B71B2 /* LaunchScreen.storyboard */,
+				F1579A702032AA03007B71B2 /* Info.plist */,
+				F1579A7A203306C7007B71B2 /* Resources */,
+			);
+			path = DemoCarosuel;
+			sourceTree = "<group>";
+		};
+		F1579A7A203306C7007B71B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1579A7B203306C7007B71B2 /* 1.jpg */,
+				F1579A7C203306C7007B71B2 /* 2.jpg */,
+				F1579A7D203306C7007B71B2 /* 3.jpg */,
+				F1579A7E203306C7007B71B2 /* 4.jpg */,
+				F1579A7F203306C7007B71B2 /* 5.jpg */,
+				F1579A80203306C7007B71B2 /* 6.jpg */,
+				F1579A81203306C7007B71B2 /* 7.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1579A602032AA03007B71B2 /* DemoCarosuel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1579A732032AA03007B71B2 /* Build configuration list for PBXNativeTarget "DemoCarosuel" */;
+			buildPhases = (
+				58035B622AF9FC077AD739FA /* [CP] Check Pods Manifest.lock */,
+				F1579A5D2032AA03007B71B2 /* Sources */,
+				F1579A5E2032AA03007B71B2 /* Frameworks */,
+				F1579A5F2032AA03007B71B2 /* Resources */,
+				BCCEBC905C68694E05EA57DA /* [CP] Embed Pods Frameworks */,
+				4FF82EB0F68ADF9A28653222 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoCarosuel;
+			productName = DemoCarosuel;
+			productReference = F1579A612032AA03007B71B2 /* DemoCarosuel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1579A592032AA03007B71B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "cl-macmini-23";
+				TargetAttributes = {
+					F1579A602032AA03007B71B2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F1579A5C2032AA03007B71B2 /* Build configuration list for PBXProject "DemoCarosuel" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1579A582032AA03007B71B2;
+			productRefGroup = F1579A622032AA03007B71B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1579A602032AA03007B71B2 /* DemoCarosuel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1579A5F2032AA03007B71B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1579A6F2032AA03007B71B2 /* LaunchScreen.storyboard in Resources */,
+				F1579A6C2032AA03007B71B2 /* Assets.xcassets in Resources */,
+				F1579A6A2032AA03007B71B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FF82EB0F68ADF9A28653222 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58035B622AF9FC077AD739FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoCarosuel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCEBC905C68694E05EA57DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1579A5D2032AA03007B71B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1579A82203309C9007B71B2 /* FSPagerView.framework in Sources */,
+				F1579A672032AA03007B71B2 /* ViewController.swift in Sources */,
+				F1579A652032AA03007B71B2 /* AppDelegate.swift in Sources */,
+				F1579A772032AAE0007B71B2 /* BookingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1579A682032AA03007B71B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1579A692032AA03007B71B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1579A6D2032AA03007B71B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1579A6E2032AA03007B71B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1579A712032AA03007B71B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1579A722032AA03007B71B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1579A742032AA03007B71B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D951EF85E4BC7D73D4A1D188 /* Pods-DemoCarosuel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4XG8C3XPJ;
+				INFOPLIST_FILE = DemoCarosuel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clicklabs.DemoCarosuel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1579A752032AA03007B71B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873DD35B60A382731DBCA4E7 /* Pods-DemoCarosuel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4XG8C3XPJ;
+				INFOPLIST_FILE = DemoCarosuel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clicklabs.DemoCarosuel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1579A5C2032AA03007B71B2 /* Build configuration list for PBXProject "DemoCarosuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1579A712032AA03007B71B2 /* Debug */,
+				F1579A722032AA03007B71B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1579A732032AA03007B71B2 /* Build configuration list for PBXNativeTarget "DemoCarosuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1579A742032AA03007B71B2 /* Debug */,
+				F1579A752032AA03007B71B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1579A592032AA03007B71B2 /* Project object */;
+}

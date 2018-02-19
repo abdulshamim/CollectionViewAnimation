@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E01C40D2038D3AD0051C8FA /* CircularCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01C40C2038D3AC0051C8FA /* CircularCollectionViewLayout.swift */; };
 		E27AE2467E1E3602EC525E31 /* Pods_DemoCarosuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9612106BF82598FD45AE0 /* Pods_DemoCarosuel.framework */; };
 		F1579A652032AA03007B71B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1579A642032AA03007B71B2 /* AppDelegate.swift */; };
 		F1579A672032AA03007B71B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1579A662032AA03007B71B2 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E01C40C2038D3AC0051C8FA /* CircularCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularCollectionViewLayout.swift; sourceTree = "<group>"; };
 		873DD35B60A382731DBCA4E7 /* Pods-DemoCarosuel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCarosuel.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel.release.xcconfig"; sourceTree = "<group>"; };
 		D951EF85E4BC7D73D4A1D188 /* Pods-DemoCarosuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCarosuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel.debug.xcconfig"; sourceTree = "<group>"; };
 		F1579A612032AA03007B71B2 /* DemoCarosuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCarosuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 		F1579A632032AA03007B71B2 /* DemoCarosuel */ = {
 			isa = PBXGroup;
 			children = (
+				4E01C40C2038D3AC0051C8FA /* CircularCollectionViewLayout.swift */,
 				F1579A642032AA03007B71B2 /* AppDelegate.swift */,
 				F1579A762032AAE0007B71B2 /* BookingCell.swift */,
 				F1579A662032AA03007B71B2 /* ViewController.swift */,
@@ -247,6 +250,7 @@
 			files = (
 				F1579A82203309C9007B71B2 /* FSPagerView.framework in Sources */,
 				F1579A672032AA03007B71B2 /* ViewController.swift in Sources */,
+				4E01C40D2038D3AD0051C8FA /* CircularCollectionViewLayout.swift in Sources */,
 				F1579A652032AA03007B71B2 /* AppDelegate.swift in Sources */,
 				F1579A772032AAE0007B71B2 /* BookingCell.swift in Sources */,
 			);

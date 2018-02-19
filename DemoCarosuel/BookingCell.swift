@@ -17,6 +17,7 @@ class BookingCell: UICollectionViewCell {
         self.layer.cornerRadius = 45
         self.layer.masksToBounds = true
     }
+
 }
 
 extension UIView {

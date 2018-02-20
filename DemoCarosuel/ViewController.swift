@@ -47,7 +47,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.collectionView.reloadData()
+    }
+    
+    func setUpLayout() {
+        if let layout = collectionView?.collectionViewLayout as? CollectionCellCustomLayout {
+            //layout.delegate = self
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,9 +67,11 @@ class ViewController: UIViewController {
     //MARK :- Take Snap shots of cell view and move to center postion of view
     private func animateView(from index: Int, frame: CGRect, cell: BookingCell) {
         let view = UIImageView()
+       // view.center = cell.center
+        view.frame.size =  frame.size
         view.frame.origin = frame.origin
-        view.frame.size.width = frame.size.width//*0.7
-        view.frame.size.height = frame.size.height//*0.7
+//        view.frame.size.width = frame.size.width//*0.7
+//        view.frame.size.height = frame.size.height//*0.7
         view.image = cell.imageView.screenshot()
         
         UIView.animate(withDuration: 0.7, animations: {
@@ -189,8 +198,9 @@ extension ViewController: UICollectionViewDelegate {
         
         let celllayout = collectionView.layoutAttributesForItem(at: indexPath)
         var frame = celllayout?.frame
-        frame?.origin.y += collectionView.frame.origin.y
         frame?.origin.x += collectionView.frame.origin.x
+        frame?.origin.y += collectionView.frame.origin.y
+
         self.animateView(from: indexPath.row, frame: frame!, cell: cell)
     }
     
@@ -220,18 +230,18 @@ extension ViewController: UICollectionViewDelegate {
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
-    
+
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 120, height: 120)
+        return CGSize(width: 100, height: 100)
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return  UIEdgeInsets(top: 5, left: 15, bottom: 5, right: 15)
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return 10
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 40
+        return 30
     }
 }
 

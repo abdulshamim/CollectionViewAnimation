@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     //MARK :- Take Snap shots of cell view and move to center postion of view
     private func animateView(from index: Int, frame: CGRect, cell: BookingCell) {
         let view = UIImageView()
-       // view.center = cell.center
+
         view.frame.size =  frame.size
         view.frame.origin = frame.origin
 //        view.frame.size.width = frame.size.width//*0.7
@@ -196,37 +196,25 @@ extension ViewController: UICollectionViewDelegate {
             fatalError("Cell not found")
         }
         
+        print(collectionView.contentOffset)
+        print(collectionView.contentSize)
+        
         let celllayout = collectionView.layoutAttributesForItem(at: indexPath)
         var frame = celllayout?.frame
+        print(frame)
         frame?.origin.x += collectionView.frame.origin.x
         frame?.origin.y += collectionView.frame.origin.y
-
+        print(frame)
         self.animateView(from: indexPath.row, frame: frame!, cell: cell)
     }
     
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        let point = CGPoint(x: self.collectionView.frame.size.width/2 + scrollView.contentOffset.x, y: self.collectionView.frame.size.height/2 + scrollView.contentOffset.y)
-//        print(point)
-//        let centerIndex = collectionView.indexPathForItem(at: point)
-//        print(centerIndex)
-//        var cells = collectionView.visibleCells
-//        if centerIndex != nil {
-//            UIView.animate(withDuration: 1, animations: {
-//                cells[(centerIndex?.item)!].frame.origin.y -= 5
-//            }) { success in
-//                if success {
-//                    cells.remove(at: (centerIndex?.item)!)
-//                    for cell in cells {
-//                        UIView.animate(withDuration: 1, animations: {
-//                            //cell.frame.origin.y += 10
-//                        })
-//                    }
-//                }
-//            }
-//
-//
-//        }
-//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        for (index, cell) in collectionView.visibleCells.enumerated() {
+            let indexPath = IndexPath(item: index, section: 0)
+             let celllayout = collectionView.layoutAttributesForItem(at: indexPath)
+             print(celllayout?.center)
+        }
+    }
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {

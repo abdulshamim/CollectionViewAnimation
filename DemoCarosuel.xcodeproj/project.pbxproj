@@ -16,6 +16,7 @@
 		F1579A6F2032AA03007B71B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1579A6D2032AA03007B71B2 /* LaunchScreen.storyboard */; };
 		F1579A772032AAE0007B71B2 /* BookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1579A762032AAE0007B71B2 /* BookingCell.swift */; };
 		F1579A82203309C9007B71B2 /* FSPagerView.framework in Sources */ = {isa = PBXBuildFile; fileRef = F1579A79203305F6007B71B2 /* FSPagerView.framework */; };
+		F15A5EFC203C347C002D3594 /* CollectionCellCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A5EFB203C347C002D3594 /* CollectionCellCustomLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F1579A7F203306C7007B71B2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		F1579A80203306C7007B71B2 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		F1579A81203306C7007B71B2 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		F15A5EFB203C347C002D3594 /* CollectionCellCustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellCustomLayout.swift; sourceTree = "<group>"; };
 		FAC9612106BF82598FD45AE0 /* Pods_DemoCarosuel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCarosuel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 				F1579A6D2032AA03007B71B2 /* LaunchScreen.storyboard */,
 				F1579A702032AA03007B71B2 /* Info.plist */,
 				F1579A7A203306C7007B71B2 /* Resources */,
+				F15A5EFB203C347C002D3594 /* CollectionCellCustomLayout.swift */,
 			);
 			path = DemoCarosuel;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15A5EFC203C347C002D3594 /* CollectionCellCustomLayout.swift in Sources */,
 				F1579A82203309C9007B71B2 /* FSPagerView.framework in Sources */,
 				F1579A672032AA03007B71B2 /* ViewController.swift in Sources */,
 				4E01C40D2038D3AD0051C8FA /* CircularCollectionViewLayout.swift in Sources */,

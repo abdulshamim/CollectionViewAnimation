@@ -14,8 +14,8 @@ class BookingCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     override func awakeFromNib() {
-        self.layer.cornerRadius = 45
-        self.layer.masksToBounds = true
+//        self.layer.cornerRadius = max(self.bounds.width, self.bounds.height)/2
+//        self.layer.masksToBounds = true
     }
 
 }

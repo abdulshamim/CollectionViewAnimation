@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DemoCarosuel/ViewController.swift"
-            timestampString = "540828191.126508"
+            filePath = "DemoCarosuel/CollectionCellCustomLayout.swift"
+            timestampString = "540999028.8509181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
-            landmarkName = "scrollViewDidScroll(_:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "layoutAttributesForElements(in:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

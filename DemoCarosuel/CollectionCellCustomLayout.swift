@@ -20,7 +20,10 @@ class CollectionLaytoutAttributes: UICollectionViewLayoutAttributes {
 
 class CollectionCellCustomLayout: UICollectionViewLayout {
     
-    let size = CGSize(width: 110, height: 110)
+    @IBInspectable open var sideItemScale: CGFloat = 0.6
+    
+    let minimumLineSpacing: CGFloat = 50
+    let size = CGSize(width: 100, height: 100)
     private var cache = [CollectionLaytoutAttributes]()
     
     override var collectionViewContentSize: CGSize {
@@ -51,13 +54,29 @@ class CollectionCellCustomLayout: UICollectionViewLayout {
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        var results = [CollectionLaytoutAttributes]()
-        for attribute in cache {
-            if attribute.frame.intersects(rect) {
-                results.append(attribute)
-            }
-        }
-        return results
+        guard let superAttributes = super.layoutAttributesForElements(in: rect),
+            let attributes = NSArray(array: superAttributes, copyItems: true) as? [UICollectionViewLayoutAttributes]
+            else { return nil }
+        return attributes.map({ self.transformLayoutAttributes($0) })
+    }
+    
+    fileprivate func transformLayoutAttributes(_ attributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+        guard let collectionView = self.collectionView else { return attributes }
+        
+        let collectionCenter = collectionView.frame.size.width/2
+        let offset = collectionView.contentOffset.x
+        let normalizedCenter = attributes.center.x - offset
+        let maxDistance = self.size.width + self.minimumLineSpacing
+        let distance = min(abs(collectionCenter - normalizedCenter), maxDistance)
+        let ratio = (maxDistance - distance)/maxDistance
+        
+        let scale = ratio * (1 - self.sideItemScale) + self.sideItemScale
+        
+        
+        attributes.transform3D = CATransform3DScale(CATransform3DIdentity, scale, scale, 1)
+        attributes.zIndex = Int(scale * 80)
+        attributes.center.y = attributes.center.y
+        return attributes
     }
     
     override func layoutAttributesForItem(at indexPath: IndexPath) -> CollectionLaytoutAttributes? {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E01C40D2038D3AD0051C8FA /* CircularCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01C40C2038D3AC0051C8FA /* CircularCollectionViewLayout.swift */; };
 		E27AE2467E1E3602EC525E31 /* Pods_DemoCarosuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9612106BF82598FD45AE0 /* Pods_DemoCarosuel.framework */; };
+		F14F9375203E83F4007D2D1C /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F9374203E83F4007D2D1C /* CustomFlowLayout.swift */; };
 		F1579A652032AA03007B71B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1579A642032AA03007B71B2 /* AppDelegate.swift */; };
 		F1579A672032AA03007B71B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1579A662032AA03007B71B2 /* ViewController.swift */; };
 		F1579A6A2032AA03007B71B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1579A682032AA03007B71B2 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		4E01C40C2038D3AC0051C8FA /* CircularCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularCollectionViewLayout.swift; sourceTree = "<group>"; };
 		873DD35B60A382731DBCA4E7 /* Pods-DemoCarosuel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCarosuel.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel.release.xcconfig"; sourceTree = "<group>"; };
 		D951EF85E4BC7D73D4A1D188 /* Pods-DemoCarosuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCarosuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCarosuel/Pods-DemoCarosuel.debug.xcconfig"; sourceTree = "<group>"; };
+		F14F9374203E83F4007D2D1C /* CustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
 		F1579A612032AA03007B71B2 /* DemoCarosuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCarosuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1579A642032AA03007B71B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1579A662032AA03007B71B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				F1579A702032AA03007B71B2 /* Info.plist */,
 				F1579A7A203306C7007B71B2 /* Resources */,
 				F15A5EFB203C347C002D3594 /* CollectionCellCustomLayout.swift */,
+				F14F9374203E83F4007D2D1C /* CustomFlowLayout.swift */,
 			);
 			path = DemoCarosuel;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				4E01C40D2038D3AD0051C8FA /* CircularCollectionViewLayout.swift in Sources */,
 				F1579A652032AA03007B71B2 /* AppDelegate.swift in Sources */,
 				F1579A772032AAE0007B71B2 /* BookingCell.swift in Sources */,
+				F14F9375203E83F4007D2D1C /* CustomFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,37 +18,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2m-bm-fuW">
-                                <rect key="frame" x="0.0" y="347" width="375" height="320"/>
+                                <rect key="frame" x="0.0" y="327" width="375" height="340"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdE-Ob-nKN">
-                                        <rect key="frame" x="0.0" y="278" width="375" height="42"/>
-                                        <state key="normal" title="BACK"/>
+                                        <rect key="frame" x="87.5" y="300" width="200" height="40"/>
+                                        <color key="backgroundColor" red="0.15440624952316284" green="0.15976294875144958" blue="0.48204034566879272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="aSz-kq-6X4"/>
+                                            <constraint firstAttribute="width" constant="200" id="ojU-y7-Shd"/>
+                                        </constraints>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="stepBackBooking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VfP-kG-Eej"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="GKt-aV-taF">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="GKt-aV-taF">
                                         <rect key="frame" x="17" y="30" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="ZER-vM-ba9"/>
                                             <constraint firstAttribute="width" constant="70" id="aa1-ql-LJy"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-rr-Mln">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-rr-Mln">
                                         <rect key="frame" x="107" y="-33" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="240-VK-df2"/>
                                             <constraint firstAttribute="height" constant="70" id="au4-U2-aV2"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="lmj-7c-q86">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="lmj-7c-q86">
                                         <rect key="frame" x="288" y="30" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="KVp-Hr-aMG"/>
                                             <constraint firstAttribute="width" constant="70" id="SBT-Lp-18E"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="eQj-be-ssI">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="eQj-be-ssI">
                                         <rect key="frame" x="198" y="-33" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="FjP-Gz-dc6"/>
@@ -60,24 +67,23 @@
                                 <constraints>
                                     <constraint firstItem="eQj-be-ssI" firstAttribute="top" secondItem="u2m-bm-fuW" secondAttribute="top" constant="-33" id="GHe-cP-C9Y"/>
                                     <constraint firstItem="08Z-rr-Mln" firstAttribute="top" secondItem="u2m-bm-fuW" secondAttribute="top" constant="-33" id="GZ9-kK-wwc"/>
-                                    <constraint firstAttribute="trailing" secondItem="jdE-Ob-nKN" secondAttribute="trailing" id="IBW-Q9-8Ed"/>
-                                    <constraint firstAttribute="height" constant="320" id="MWY-9B-QKI"/>
+                                    <constraint firstAttribute="height" constant="340" id="MWY-9B-QKI"/>
                                     <constraint firstAttribute="bottom" secondItem="jdE-Ob-nKN" secondAttribute="bottom" id="Qh8-Hm-np3"/>
                                     <constraint firstItem="08Z-rr-Mln" firstAttribute="leading" secondItem="u2m-bm-fuW" secondAttribute="leading" constant="107" id="UCF-4C-TIw"/>
+                                    <constraint firstItem="jdE-Ob-nKN" firstAttribute="centerX" secondItem="u2m-bm-fuW" secondAttribute="centerX" id="esO-7c-cQF"/>
                                     <constraint firstItem="GKt-aV-taF" firstAttribute="top" secondItem="u2m-bm-fuW" secondAttribute="top" constant="30" id="gHM-7X-iT0"/>
                                     <constraint firstItem="lmj-7c-q86" firstAttribute="top" secondItem="u2m-bm-fuW" secondAttribute="top" constant="30" id="kff-fI-CI7"/>
-                                    <constraint firstItem="jdE-Ob-nKN" firstAttribute="leading" secondItem="u2m-bm-fuW" secondAttribute="leading" id="nLm-hu-YVv"/>
                                     <constraint firstAttribute="trailing" secondItem="eQj-be-ssI" secondAttribute="trailing" constant="107" id="pgc-XT-J1R"/>
                                     <constraint firstAttribute="trailing" secondItem="lmj-7c-q86" secondAttribute="trailing" constant="17" id="sP3-kC-5tU"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hf8-ui-ieX">
-                                <rect key="frame" x="0.0" y="492" width="375" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="470" width="375" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="AOW-Gn-mRD"/>
+                                    <constraint firstAttribute="height" constant="150" id="AOW-Gn-mRD"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2MP-Ac-hPr">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wyd-cQ-cb6" customClass="CustomFlowLayout" customModule="DemoCarosuel" customModuleProvider="target">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -85,7 +91,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookingCell" id="YkT-WO-mVC" customClass="BookingCell" customModule="DemoCarosuel" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="9" width="108" height="110"/>
+                                        <rect key="frame" x="0.0" y="20" width="108" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="108" height="110"/>
@@ -136,13 +142,14 @@
                             <constraint firstItem="u2m-bm-fuW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KtO-9s-hPe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hf8-ui-ieX" secondAttribute="bottom" constant="47" id="LFU-kR-rvy"/>
                             <constraint firstItem="GKt-aV-taF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="W3J-gL-LEs"/>
-                            <constraint firstItem="jdE-Ob-nKN" firstAttribute="top" secondItem="Hf8-ui-ieX" secondAttribute="bottom" constant="5" id="X7k-b7-l53"/>
+                            <constraint firstItem="jdE-Ob-nKN" firstAttribute="top" secondItem="Hf8-ui-ieX" secondAttribute="bottom" constant="7" id="X7k-b7-l53"/>
                             <constraint firstItem="Hf8-ui-ieX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Znh-hX-Tti"/>
                             <constraint firstItem="u2m-bm-fuW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x8m-Xd-aOc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="jdE-Ob-nKN" id="zzi-GU-ljD"/>
                         <outlet property="collectionView" destination="Hf8-ui-ieX" id="LWP-9Y-FXf"/>
                         <outlet property="containerView" destination="u2m-bm-fuW" id="Bn8-YL-U72"/>
                         <outlet property="firstSelectedView" destination="GKt-aV-taF" id="fRy-Zm-OlV"/>
@@ -157,6 +164,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image1" width="320" height="320"/>
         <image name="placeholder" width="80" height="80"/>
     </resources>
 </document>

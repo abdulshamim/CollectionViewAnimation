@@ -248,14 +248,7 @@ extension ViewController: UICollectionViewDelegate {
         frame?.origin.y += collectionView.frame.origin.y
         self.animateView(from: indexPath.row, frame: cellFrameInSuperview!, cell: cell)
     }
-    
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        for (index, cell) in collectionView.visibleCells.enumerated() {
-//            let indexPath = IndexPath(item: index, section: 0)
-//             let celllayout = collectionView.layoutAttributesForItem(at: indexPath)
-//            // print(celllayout?.center)
-//        }
-//    }
+
 }
 
 //extension ViewController: UICollectionViewDelegateFlowLayout {

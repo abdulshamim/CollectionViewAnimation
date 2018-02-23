@@ -12,10 +12,8 @@ class CustomFlowLayout: UICollectionViewFlowLayout {
     
     @IBInspectable open var sideItemScale: CGFloat = 0.7
     @IBInspectable open var yOffsetTranslate: CGFloat = 0.5
-    
-    
+
     var size = CGSize()
-   
     private let visibleOffset: CGFloat = 10
     
 
@@ -51,36 +49,18 @@ class CustomFlowLayout: UICollectionViewFlowLayout {
         }
     
         self.sectionInset = UIEdgeInsetsMake(yInset, xInset, yInset, xInset)
-     // collectionView.contentInset = UIEdgeInsets(top: yInset, left: xInset, bottom: yInset, right: xInset)
         
         let side = self.itemSize.width
         let scaledItemOffset =  (side - side*self.sideItemScale) / 2
         
         let fullSizeSideItemOverlap = visibleOffset + scaledItemOffset
-        let inset = xInset
-        
-        print(yInset)
-        print(xInset)
-        print(inset)
-        print(scaledItemOffset)
-        print(visibleOffset)
-        print(fullSizeSideItemOverlap)
-        self.minimumLineSpacing = abs(inset - fullSizeSideItemOverlap)
-        //self.collectionView?.heightAnchor.constraint(equalToConstant: collectionView.contentSize.height)
+      //  let inset = xInset
+        self.minimumLineSpacing = abs(xInset - fullSizeSideItemOverlap)
     }
     
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
     }
-    
-    
-//    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-//        let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-//        let angle = 2 * .pi * CGFloat(indexPath.item) / CGFloat(numberOfItems)
-//        attributes.center = CGPoint(x: center.x + radius * cos(angle), y: center.y + radius * sin(angle))
-//       // attributes.size = itemSize
-//        return attributes
-//    }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let superAttributes = super.layoutAttributesForElements(in: rect),
@@ -91,7 +71,9 @@ class CustomFlowLayout: UICollectionViewFlowLayout {
     
     fileprivate func transformLayoutAttributes(_ attributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
          guard let collectionView = self.collectionView else { return attributes }
+      
         print(self.minimumLineSpacing)
+        
         let collectionCenter = collectionView.frame.size.width/2
         let offset = collectionView.contentOffset.x
         let normalizedCenter = attributes.center.x - offset
@@ -106,17 +88,8 @@ class CustomFlowLayout: UICollectionViewFlowLayout {
         let yPostionDistance = min(abs(collectionCenter - normalizedCenter), maxDistance)
         let positionRatio = abs((maxDistance - yPostionDistance)/maxDistance)
         let yTranslate =  positionRatio * (1.8 - self.yOffsetTranslate) //+ self.yOffsetTranslate
-        print(yPostionDistance)
-        print(positionRatio)
-        print(yTranslate)
-        print(attributes.center.y)
-        print( yTranslate * attributes.center.y)
         attributes.center.y +=  -yTranslate/2.3*attributes.center.y
         attributes.center.y += 26
-        print( attributes.center.y)
- 
-       
-        
         return attributes
     }
     
